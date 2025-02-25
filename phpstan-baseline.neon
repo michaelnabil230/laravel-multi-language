@@ -7,7 +7,7 @@ parameters:
 			path: src/Http/Middleware/SetLocale.php
 
 		-
-			message: '#^Trait MichaelNabil230\\LaravelMultiLanguage\\LoadsTranslatedCachedRoutes is used zero times and is not analysed\.$#'
+			message: '#^Trait MichaelNabil230\\LaravelMultiLanguage\\Traits\\LoadsTranslatedCachedRoutes is used zero times and is not analysed\.$#'
 			identifier: trait.unused
 			count: 1
-			path: src/LoadsTranslatedCachedRoutes.php
+			path: src/Traits/LoadsTranslatedCachedRoutes.php

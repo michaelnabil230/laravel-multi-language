@@ -1,6 +1,6 @@
 <?php
 
-namespace MichaelNabil230\LaravelMultiLanguage;
+namespace MichaelNabil230\LaravelMultiLanguage\Traits;
 
 use Illuminate\Support\Facades\Log;
 use MichaelNabil230\LaravelMultiLanguage\Facades\LaravelMultiLanguage;
