@@ -29,7 +29,7 @@ class SetLocale
 
         $locale = $request->wantsJson()
             ? $this->getLocaleFromHeader($request)
-            : $firstUriSegment ?? $fallback;
+            : $firstUriSegment;
 
         if (! LaravelMultiLanguage::isSupportedLocale($locale) && ! $request->wantsJson()) {
             return $this->redirectToFallback($request, $fallback);

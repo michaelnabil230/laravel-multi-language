@@ -1,12 +1,6 @@
 parameters:
 	ignoreErrors:
 		-
-			message: '#^Variable \$firstUriSegment on left side of \?\? always exists and is not nullable\.$#'
-			identifier: nullCoalesce.variable
-			count: 1
-			path: src/Http/Middleware/SetLocale.php
-
-		-
 			message: '#^Trait MichaelNabil230\\LaravelMultiLanguage\\Traits\\LoadsTranslatedCachedRoutes is used zero times and is not analysed\.$#'
 			identifier: trait.unused
 			count: 1
