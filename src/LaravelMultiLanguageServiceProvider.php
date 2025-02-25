@@ -2,7 +2,8 @@
 
 namespace MichaelNabil230\LaravelMultiLanguage;
 
-use MichaelNabil230\LaravelMultiLanguage\Commands\LaravelMultiLanguageCommand;
+use MichaelNabil230\LaravelMultiLanguage\Commands\RouteTranslationsCacheCommand;
+use MichaelNabil230\LaravelMultiLanguage\Commands\RouteTranslationsClearCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -13,6 +14,9 @@ class LaravelMultiLanguageServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-multi-language')
             ->hasConfigFile()
-            ->hasCommand(LaravelMultiLanguageCommand::class);
+            ->hasCommands([
+                RouteTranslationsCacheCommand::class,
+                RouteTranslationsClearCommand::class,
+            ]);
     }
 }
