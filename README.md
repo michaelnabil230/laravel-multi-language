@@ -18,7 +18,7 @@ composer require michaelnabil230/laravel-multi-language
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-multi-language-config"
+php artisan vendor:publish --tag="multi-language-config"
 ```
 
 ### Middleware Setup
